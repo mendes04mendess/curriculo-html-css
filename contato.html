@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato</title>
+   
+   <style>
+        body {
+            background-color: #e8eef5;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            color: black;
+        }
+        .cabecalho {
+            background-color: teal;
+            padding: 35px 50px 50px 50px;
+            color: white;
+        }
+        .cabecalho h1 {
+            margin: 0;
+            font-size: 38px;
+        }
+        .cabecalho p {
+            margin: 0;
+            font-size: 18px;
+        }
+        input,
+        textarea {
+            width: 65%;
+            padding: 10px;
+            margin: 5px auto 15px auto;
+            margin-bottom: 15px;
+            border: 1px solid gainsboro;
+            border-radius: 8px;
+            box-sizing: border-box;
+            display: block;
+            font-family: Arial, sans-serif;
+            font-size: 15px;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            width: 65%;
+            margin: 0 auto;
+            color: teal;
+        }
+        .caixa {
+            background-color: #e8eef5;
+            width: 900px;
+            margin: 40px auto;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+            box-sizing: border-box;
+        }
+        h1 {
+            text-align: center;
+            color: white;
+            font-size: 32px;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid teal;
+        }
+        button {
+            background-color: teal;
+            color: white;
+            border: none;
+            padding: 12px 35px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            display: block;
+            margin: 10px auto;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: teal;
+        }
+        input:focus,
+        textarea:focus {
+            outline: none;
+            border: 2px solid teal;
+        }
+        .subtitulo {
+            text-align: center;
+            color: black;
+            margin-top: 8px;
+            margin-bottom: 25px;
+        }
+        .linha {
+            display:flex;
+            gap: 25px;
+        }
+        .campo {
+            flex: 1;
+        }
+        .voltar {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            color: teal;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .voltar:hover {
+            color: teal;
+        }
+        .primeiro-campo {
+            margin-top: 35px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="caixa">
+
+        <div class="cabecalho">
+        <h1>FORMULÁRIO DE CONTATO</h1>
+        <p class="subtitulo">Entre em contato comigo</p>
+        </div>
+    
+    <form>
+        <div class="primeiro-campo">
+        <label>Nome Completo:</label>
+        <input type="text">
+        </div>
+
+        <br><br>
+
+        <div class="linha">
+
+        <div class="campo">
+        <label>Data de Nascimento:</label>
+        <input type="date">
+        </div>
+
+        <br><br>
+
+        <div class="campo">
+        <label>CPF:</label>
+        <input type="text">
+        </div>
+
+        </div>
+
+        <br><br>
+
+        <label>E-mail:</label>
+        <input type="email">
+
+        <br><br>
+
+        <div class="linha">
+
+        <div class="campo">
+        <label>Bairro:</label>
+        <input type="text">
+        </div>
+
+        <div class="campo">
+        <label>Cidade:</label>
+        <input type="text">
+        </div>
+
+        <div class="campo">
+        <label>UF:</label>
+        <input type="text">
+        </div>
+
+        </div>
+
+        <br><br>
+
+        <label>Comentários:</label>
+    
+        <br>
+    
+        <textarea rows="5" cols="40"></textarea>
+        
+        <br><br>
+
+        <button type="submit">Enviar</button>
+
+        <a href="curriculo.html" class="voltar">← VOLTAR PARA O CURRÍCULO</a>
+    </div>
+    </form>
+</body>
+</html>
